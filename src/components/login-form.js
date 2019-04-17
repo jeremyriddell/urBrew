@@ -39,9 +39,9 @@ class LoginForm extends Component {
                         loggedIn: true,
                         username: response.data.username
                     })
-                    // update the state to redirect to home
+                    // update the state to redirect to fridge page
                     this.setState({
-                        redirectTo: '/'
+                        redirectTo: '/mainFridge'
                     })
                 }
             }).catch(error => {
