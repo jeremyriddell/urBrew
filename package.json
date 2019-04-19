@@ -7,10 +7,12 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
+    "mongodb": "^3.2.3",
     "mongoose": "^5.4.22",
     "morgan": "^1.9.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "spectre.css": "^0.5.8"
@@ -29,5 +31,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@webpack-cli/init": "^0.1.5",
+    "webpack-cli": "^3.3.0"
+  }
 }
