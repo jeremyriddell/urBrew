@@ -125,4 +125,15 @@
       padding-left: 80px;
     
   }
-  
+  .beer {
+    background-color: rgb(165, 95, 16);
+    color: #fff;
+  }
+  p {
+    font-size: medium;
+    font-family: Comic Sans MS;
+  }
+  h1 {
+    background-color: black;
+    width: auto;
+  }

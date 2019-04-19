@@ -42,11 +42,11 @@ class BrewerySearch extends Component {
             <div>
             <div>
             {this.state.beers.map(beer => (
-                <div>
-                    <h1>{beer.name}</h1>
-                    <p>{beer.description}</p> 
-                    
-                </div>
+                <div className="beer">
+                <h1>{beer.name}</h1>
+                <p>{beer.description}</p> 
+                
+            </div>
             
              ) )}
                 </div>
