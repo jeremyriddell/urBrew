@@ -7,7 +7,7 @@ class BrewerySearch extends Component {
 
     state = {
         searchTerm: "",
-        beers: []
+        data: []
     }
 
     handleInputChange = event => {
@@ -30,7 +30,7 @@ class BrewerySearch extends Component {
                 searchTerm: "",
                 beers: res.data.data
             })
-        console.log(this.state.beers)
+            console.log(this.state)
         // console.log(this.state.data.data)
         })
         .catch(err => console.log(err))      
@@ -41,7 +41,7 @@ class BrewerySearch extends Component {
             
             <div>
             <div>
-            {this.state.beers.map(beer => (
+            {this.state.data.length == 0 ? null:  this.state.data.map(beer => (
                 <div>
                     <h1>{beer.name}</h1>
                     <p>{beer.description}</p> 
