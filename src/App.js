@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link, Switch, Redirect, BrowserRouter as Router } from 'react-router-dom'
+
+   
 // components
 import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
-import Home from './components/home'
+import Guest from './components/guest'
+
 
 class App extends Component {
   constructor() {
@@ -59,9 +62,7 @@ class App extends Component {
           <p>Join the party, {this.state.username}!</p>
         }
         {/* Routes to different components */}
-        <Route
-          exact path="/"
-          component={Home} />
+        
         <Route
           path="/login"
           render={() =>
@@ -74,10 +75,16 @@ class App extends Component {
           render={() =>
             <Signup/>}
         />
-
+        <Route
+          path="/guest"
+          render={() =>
+            <Guest/>}
+        />
+        
       </div>
     );
   }
 }
+
 
 export default App;
