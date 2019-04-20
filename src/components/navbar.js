@@ -50,7 +50,7 @@ class Navbar extends Component {
                         ) : (
                                 <section className="navbar-section">
                                    
-                                    <Link  to="/guest" className="btn btn-link text-secondary">
+                                    <Link  to="/Guest" className="btn btn-link text-secondary">
                                         <span className="text-secondary">Continue as a Guest?</span>
                                         </Link>
                                     <Link to="/login" className="btn btn-link text-secondary">

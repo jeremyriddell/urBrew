@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
+import '../BeerFridge/beerList.js'
 
 class LoginForm extends Component {
     constructor() {
@@ -41,7 +42,7 @@ class LoginForm extends Component {
                     })
                     // update the state to redirect to fridge page
                     this.setState({
-                        redirectTo: '/mainFridge'
+                        redirectTo: '/beerList'
                     })
                 }
             }).catch(error => {

@@ -80,7 +80,11 @@ class App extends Component {
           render={() =>
             <Guest/>}
         />
-        
+        <Route
+          path="/beerList"
+          render={() =>
+            <beerList/>}
+        />
       </div>
     );
   }
