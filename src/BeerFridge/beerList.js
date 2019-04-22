@@ -3,6 +3,9 @@ import React from "react";
 import Thumbnail from "../BeerFridge/thumbnail.js";
 import { Container, Row, Col } from "../BeerFridge/grid.js";
 
+        
+            
+
 
 // Exporting both RecipeList and RecipeListItem from this file
 
@@ -17,7 +20,8 @@ export function RecipeListItem({
     title,
     ingredients,
     href
-}) {
+})
+{
     return (
         <li className="list-group-item">
             <Container>
