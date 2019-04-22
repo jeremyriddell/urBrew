@@ -45,6 +45,7 @@ class BrewerySearch extends Component {
                 <div className="beer">
                 <h1>{beer.name}</h1>
                 <p>{beer.description}</p> 
+                <p>{beer.style.description}</p>
                 
             </div>
             
