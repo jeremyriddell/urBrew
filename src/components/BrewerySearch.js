@@ -50,7 +50,7 @@ class BrewerySearch extends Component {
             </div>
             
              ) )}
-                </div>
+               // </div>
                 <div className="jumbotron">
                     <div className="row">
                         <div className="col-6">
@@ -60,7 +60,7 @@ class BrewerySearch extends Component {
                         <div className="col-6">
                         <form>
                             <input value={this.state.searchTerm} onChange={this.handleInputChange} name="searchTerm"
-                                placeholder="Ale" />
+                                placeholder="What typr of Beer?" />
                             <button type="button" className="beerMe btn btn-light" id="search-button"  onClick={this.handleFormSubmit}>Beer Me!</button>
                         </form>
                         </div>
