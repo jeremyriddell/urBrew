@@ -25,22 +25,15 @@ class Signup extends Component {
 			username: this.state.username,
 			password: this.state.password
 		}
-		console.log(user)
+		console.log("Front-end form", user)
 
 		//request to server to add a new username/password
 		API.createUser(user)
-			.then((res, err)=> {
-				if (err) {
-					console.log(res);
-					this.setState({ //redirect to login page
-						redirectTo: '/login'
-					})
-				} else {
-					console.log('username already taken')
-				}
-			}).catch(error => {
-				console.log('signup error: ')
-				console.log(error)
+			.then((res)=> {
+				console.log(res.data)
+				window.location = "/login"
+			}).catch(err => {
+				console.log(err)
 
 			})
 	}

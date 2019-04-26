@@ -7,7 +7,7 @@ export default {
   },
 
   createUser: user => {
-    console.log(user);
+    console.log("from API", user);
     return axios.post('/api/user/signup', user);
   }
 }

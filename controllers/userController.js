@@ -2,12 +2,19 @@ const db = require("../models");
 
 module.exports = {
     createUser: (req, res ) => {
-        console.log(db.User);
+        console.log("In your controller now.")
+        let newUser = {
+            username: req.body.username,
+            password: req.body.password
+        }
+        console.log(newUser);
 
-        console.log(req.body);
-
-        db.User.create(req.body)
-        .then(dbModel => console.log(dbModel))
-        .catch(err => res.status(422).json(err))
-    }
+    
+        db.User
+        .create(req.body)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => {
+          console.log("this is our error inside create: ", err);
+          res.status(422).json(err)
+        });    }
 }

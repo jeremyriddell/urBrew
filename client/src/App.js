@@ -8,6 +8,7 @@ import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Guest from './components/guest'
+import { RecipeList } from './BeerFridge/beerList';
 
 
 class App extends Component {
@@ -81,9 +82,9 @@ class App extends Component {
             <Guest/>}
         />
         <Route
-          path="/beerList"
+          path="/BeerFridge"
           render={() =>
-            <beerList/>}
+            <RecipeList/>}
         />
       </div>
     );
