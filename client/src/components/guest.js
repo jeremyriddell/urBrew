@@ -51,9 +51,10 @@ class Guest extends Component {
                     <BrewerySearch >
                     
                     </BrewerySearch>
-
-
-
+                    <div>
+                    <div className="row">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwIKKq0iEG2TDP9_6pfMwFRPkTwsZv7Ykv2v1nHgQ4h-Vl_vhq8Q' alt="beer pic"></img>
+                    </div>
                     {/* <div className="row jumbotron">
                         <div className="col-4">
                             <h3 className="text-right">Find a local brewery!</h3>
@@ -134,7 +135,7 @@ class Guest extends Component {
                     </div> */}
                 </div>
                 
-            
+            </div>
             
         )
         

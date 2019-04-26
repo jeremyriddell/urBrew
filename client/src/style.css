@@ -30,6 +30,8 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    background-image: url('./images/background.jpg');
+    
   }
   #right-panel {
     font-family: 'Roboto','sans-serif';
@@ -149,3 +151,4 @@
     width: 300px;
     margin-left: -200%;
   }
+  
