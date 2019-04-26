@@ -8,7 +8,7 @@ import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Guest from './components/guest'
-import { RecipeList } from './BeerFridge/beerList';
+import Nav from './BeerFridge/nav';
 
 
 class App extends Component {
@@ -60,7 +60,7 @@ class App extends Component {
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
         {/* greet user if logged in: */}
         {this.state.loggedIn &&
-          <p>Join the party, {this.state.username}!</p>
+          <p>This is your fridge, {this.state.username}!</p>
         }
         {/* Routes to different components */}
         
@@ -82,9 +82,9 @@ class App extends Component {
             <Guest/>}
         />
         <Route
-          path="/BeerFridge"
+          path="/BeerFridge/nav"
           render={() =>
-            <RecipeList/>}
+            <Nav/>}
         />
       </div>
     );

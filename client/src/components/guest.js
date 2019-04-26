@@ -54,7 +54,7 @@ class Guest extends Component {
 
 
 
-                    <div className="row jumbotron">
+                    {/* <div className="row jumbotron">
                         <div className="col-4">
                             <h3 className="text-right">Find a local brewery!</h3>
                         </div>
@@ -67,7 +67,7 @@ class Guest extends Component {
                         <div className="col-4">
                             <button type="button" className="btn btn-light" id="find-button">I like beer.</button>
                         </div>
-                    </div>
+                    </div> */}
 
 
                     {/* <div className="modal fade modal-xl" id="beerModal" tabindex="-1" role="dialog" aria-labelledby="beerInfo"
