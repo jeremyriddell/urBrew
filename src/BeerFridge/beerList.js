@@ -1,16 +1,16 @@
 import React from "react";
-import Thumbnail from "../Thumbnail";
-import { Container, Row, Col } from "../Grid";
+import Thumbnail from "../BeerFridge/thumbnail.js";
+import { Container, Row, Col } from "./grid";
 
-// Exporting both RecipeList and RecipeListItem from this file
+// Exporting both BeerList and BeerListItem from this file
 
 // RecipeList renders a bootstrap list item
-export function RecipeList({ children }) {
+export function BeerList({ children }) {
     return <ul className="list-group">{children}</ul>;
 }
 
-// RecipeListItem renders a bootstrap list item containing data from the recipe api call
-export function RecipeListItem({
+// BeerListItem renders a bootstrap list item containing data from the beer api call
+export function BeerListItem({
     thumbnail = "https://placehold.it/300x300",
     title,
     ingredients,

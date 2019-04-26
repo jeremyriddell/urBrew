@@ -7,7 +7,6 @@ class Signup extends Component {
 		this.state = {
 			username: '',
 			password: '',
-			confirmPassword: '',
 
 		}
 		this.handleSubmit = this.handleSubmit.bind(this)

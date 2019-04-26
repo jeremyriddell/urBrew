@@ -36,7 +36,7 @@ app.use(passport.session()) // calls the deserializeUser
 
 // Connect to the Mongo DB
 mongoose.connect(
-	process.env.MONGODB_URI || "mongodb://localhost/fridge"
+	process.env.MONGODB_URI || "mongodb://localhost:27017/fridge"
   );
 
 
