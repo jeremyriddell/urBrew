@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const session = require('express-session')
 const routes = require('./routes')
 // const MongoStore = require('connect-mongo')(session)
-// const passport = require('./controllers/passport');
+const passport = require('./controllers/passport');
 const app = express();
 const PORT = process.env.PORT || 3001;
 // Route requires
@@ -33,9 +33,9 @@ app.use(
 
 app.use(routes);
 
-// // Passport
-// app.use(passport.initialize())
-// app.use(passport.session()) // calls the deserializeUser
+// Passport
+app.use(passport.initialize())
+app.use(passport.session()) // calls the deserializeUser
 
 // Connect to the Mongo DB
 mongoose.connect(
@@ -48,7 +48,7 @@ mongoose.connect(
 //  app.use('/guest', (req, res) =>
 //  {
 //  	console.log("test")
-//  	res.send("./public/Base/index.html")
+//  	res.send("./public/index.html")
 //  })
 
 // Starting Server 
