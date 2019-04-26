@@ -137,3 +137,15 @@
     background-color: black;
     width: auto;
   }
+  .jumbotron {
+    min-height: 300px;
+    padding-top: 100px;
+  }
+  #search-button {
+    background-color: rgb(223, 139, 14);
+  }
+  .App-logo {
+    height: 240px;
+    width: 300px;
+    margin-left: -200%;
+  }

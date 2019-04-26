@@ -41,10 +41,10 @@ class Navbar extends Component {
             <div>
 
                 <header className="navbar App-header" id="nav-container">
-                    <div className="col-4" >
+                    <div className="col-8" >
                         {loggedIn ? (
                             <section className="navbar-section">
-                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
+                                <Link to="/Guest" className="btn btn-link text-secondary" onClick={this.logout}>
                                 <span className="text-secondary">logout</span></Link>
 
                             </section>
@@ -63,7 +63,7 @@ class Navbar extends Component {
                                 </section>
                             )}
                     </div>
-                    <div className="col-4 col-mr-auto">
+                    <div className="col-2 col-mr-auto">
                     <div id="top-filler"></div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeOewC-EkhJnZ1Zx26lnWZyiyFlRYs-t2xHBkHiUegVcLVBIqB" className="App-logo" alt="beer" />
                         
