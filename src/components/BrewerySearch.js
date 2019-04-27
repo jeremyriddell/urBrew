@@ -61,6 +61,7 @@ class BrewerySearch extends Component {
                             <input value={this.state.searchTerm} onChange={this.handleInputChange} name="searchTerm"
                                 placeholder="Ale" />
                             <button type="button" className="beerMe btn btn-light" id="search-button"  onClick={this.handleFormSubmit}>Beer Me!</button>
+                            <button type="button" className="favorite btn btn-light" id="search-button"  onClick={this.handleFormSubmit}>Add to MY FRIDGE!</button>
                         </form>
                         </div>
                     </div>

@@ -30,6 +30,8 @@ app.use(
 	})
 )
 
+app.use(express.static("public"));
+
 // Passport
 app.use(passport.initialize())
 app.use(passport.session()) // calls the deserializeUser
