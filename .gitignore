@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /BeerFridge/node_modules
+/BeerFridge/client/node_modules
 /.pnp
 .pnp.js
 
