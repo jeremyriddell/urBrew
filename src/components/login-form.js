@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
-import '../BeerFridge/beerList.js'
+//import '../BeerFridge/beerList.js'
 
 class LoginForm extends Component {
     constructor() {
