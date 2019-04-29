@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   getUser() {
-    axios.get('/user/').then(response => {
+    axios.get('/api/user').then(response => {
       console.log('Get user response: ')
       console.log(response.data)
       if (response.data.user) {
@@ -51,16 +51,19 @@ class App extends Component {
         })
       }
     })
+    .catch(()=> 
+    console.log("getUser not firing"))
   }
 
   render() {
     return (
       <div className="App">
    
-        <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
+        <Navbar updateUser={this.updateUser} loggedIn={this.state.username} />
         {/* greet user if logged in: */}
-        {this.state.loggedIn &&
-          <p>This is your fridge, {this.state.username}!</p>
+        {this.state.loggedIn ?
+          <p>{`This is your fridge, ${this.state.username}!`}</p>
+          : <p>Please log in</p>
         }
         {/* Routes to different components */}
         

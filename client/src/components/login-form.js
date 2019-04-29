@@ -27,7 +27,7 @@ class LoginForm extends Component {
         console.log('handleSubmit')
 
         axios
-            .post('/user/login', {
+            .post('/api/user/login', {
                 username: this.state.username,
                 password: this.state.password
             })
@@ -36,16 +36,23 @@ class LoginForm extends Component {
                 console.log(response)
                 if (response.status === 200) {
                     // update App.js state
-                    this.props.updateUser({
-                        loggedIn: true,
-                        username: response.data.username
-                    })
+                    localStorage.clear();
+                   // localStorage.setItem("_id", response.data.user._id)
+                   localStorage.setItem("loggedIn", true);
+                    // this.props.updateUser({
+                    //     loggedIn: true,
+                    //     username: response.data.username
+                    // })
                     // update the state to redirect to fridge page
-                    this.setState({
-                        redirectTo: '/BeerFridge/nav'
-                    })
+                    
                 }
-            }).catch(error => {
+            }).then(() => {
+                console.log("you're in")
+                this.setState({
+                    redirectTo: '/'
+                })
+            })
+            .catch(error => {
                 console.log('login error: ')
                 console.log(error);
                 

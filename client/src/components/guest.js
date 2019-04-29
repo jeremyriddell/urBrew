@@ -48,7 +48,7 @@ class Guest extends Component {
                         </div>
                     </div> */}
 
-                    <BrewerySearch >
+                    <BrewerySearch>
                     
                     </BrewerySearch>
                     <div>
@@ -71,7 +71,11 @@ class Guest extends Component {
                     </div> */}
 
 
+<<<<<<< HEAD:client/src/components/guest.js
                     {/* <div className="modal fade modal-xl" id="beerModal" tabindex="-1" role="dialog" aria-labelledby="beerInfo"
+=======
+                    <div className="modal fade modal-xl" id="beerModal" tabIndex="-1" role="dialog" aria-labelledby="beerInfo"
+>>>>>>> master:src/components/guest.js
                         aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
@@ -99,7 +103,11 @@ class Guest extends Component {
                         </div>
                     </div> */}
 
+<<<<<<< HEAD:client/src/components/guest.js
                     {/* <div className="modal fade modal-xl" id="favModal" tabindex="-1" role="dialog" aria-labelledby="favInfo"
+=======
+                    <div className="modal fade modal-xl" id="favModal" tabIndex="-1" role="dialog" aria-labelledby="favInfo"
+>>>>>>> master:src/components/guest.js
                         aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
