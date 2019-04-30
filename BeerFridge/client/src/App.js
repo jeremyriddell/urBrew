@@ -4,13 +4,13 @@ import Nav from "./components/Nav";
 import Input from "./components/Input";
 import Button from "./components/Button";
 import API from "./utils/API";
-import { RecipeList, RecipeListItem } from "./components/RecipeList";
+import { BeerList, BeerListItem } from "./components/BeerList";
 import { Container, Row, Col } from "./components/Grid";
 
 class App extends Component {
   state = {
-    recipes: [],
-    recipeSearch: ""
+    Beers: [],
+    BeerSearch: ""
   };
 
   handleInputChange = event => {
@@ -23,10 +23,10 @@ class App extends Component {
   };
 
   handleFormSubmit = event => {
-    // When the form is submitted, prevent its default behavior, get recipes update the recipes state
+    // When the form is submitted, prevent its default behavior, get Beers update the Beers state
     event.preventDefault();
-    API.getRecipes(this.state.recipeSearch)
-      .then(res => this.setState({ recipes: res.data }))
+    API.getBeers(this.state.BeerSearch)
+      .then(res => this.setState({ Beers: res.data }))
       .catch(err => console.log(err));
   };
 
@@ -44,25 +44,25 @@ class App extends Component {
                     <Col size="xs-9 sm-10">
                       <Input
                         name="beerSearch"
-                        value={this.state.recipeSearch}
+                        value={this.state.BeerSearch}
                         onChange={this.handleInputChange}
                         placeholder="Beer Name"
                       />
                        <Input
                         name="breweryName"
-                        value={this.state.recipeSearch}
+                        value={this.state.BeerSearch}
                         onChange={this.handleInputChange}
-                        placeholder="Search For a Brewery"
+                        placeholder="Brewery"
                       />
                        <Input
                         name="bottleSize"
-                        value={this.state.recipeSearch}
+                        value={this.state.BeerSearch}
                         onChange={this.handleInputChange}
                         placeholder="Bottle Size"
                       />
                        <Input
                         name="Quantity"
-                        value={this.state.recipeSearch}
+                        value={this.state.BeerSearch}
                         onChange={this.handleInputChange}
                         placeholder="Quantity"
                       />
@@ -75,6 +75,14 @@ class App extends Component {
                       >
                         Add Beer
                       </Button>
+                      <Button
+                        onClick={this.handleFormSubmit}
+                        type="success"
+                        className="input-lg"
+                      >
+                        Remove Beer
+                      </Button>
+                      
                     </Col>
                   </Row>
                 </Container>
@@ -82,23 +90,24 @@ class App extends Component {
             </Col>
           </Row>
           <Row>
+            
             <Col size="xs-12">
-              {!this.state.recipes.length ? (
+              {!this.state.Beers.length ? (
                 <h1 className="text-center">Beers in my Fridge</h1>
               ) : (
-                <RecipeList>
-                  {this.state.recipes.map(recipe => {
+                <BeerList>
+                  {this.state.Beers.map(Beer => {
                     return (
-                      <RecipeListItem
-                        key={recipe.title}
-                        title={recipe.title}
-                        href={recipe.href}
-                        ingredients={recipe.ingredients}
-                        thumbnail={recipe.thumbnail}
+                      <BeerListItem
+                        key={Beer.title}
+                        title={Beer.title}
+                        href={Beer.href}
+                        ingredients={Beer.ingredients}
+                        thumbnail={Beer.thumbnail}
                       />
                     );
                   })}
-                </RecipeList>
+                </BeerList>
               )}
             </Col>
           </Row>
