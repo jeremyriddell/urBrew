@@ -1,11 +1,6 @@
-import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
-import axios from 'axios'
-<<<<<<< HEAD:src/components/login-form.js
-//import '../BeerFridge/beerList.js'
-=======
-
->>>>>>> c144225c0c9d7ba931255b82b368667231a2931c:client/src/components/login-form.js
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import axios from 'axios';
 
 class LoginForm extends Component {
     constructor() {
