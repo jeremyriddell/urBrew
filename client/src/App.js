@@ -8,7 +8,6 @@ import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Guest from './components/guest'
-import Nav from './BeerFridge/nav';
 
 
 class App extends Component {
@@ -61,10 +60,10 @@ class App extends Component {
    
         <Navbar updateUser={this.updateUser} loggedIn={this.state.username} />
         {/* greet user if logged in: */}
-        {this.state.loggedIn ?
+        {/* {this.state.loggedIn ?
           <p>{`This is your fridge, ${this.state.username}!`}</p>
           : <p>Please log in</p>
-        }
+        } */}
         {/* Routes to different components */}
         
         <Route
@@ -84,11 +83,11 @@ class App extends Component {
           render={() =>
             <Guest/>}
         />
-        <Route
+        {/* <Route
           path="/BeerFridge/nav"
           render={() =>
             <Nav/>}
-        />
+        /> */}
       </div>
     );
   }
