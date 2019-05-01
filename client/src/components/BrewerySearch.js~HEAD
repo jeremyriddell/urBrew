@@ -45,7 +45,7 @@ class BrewerySearch extends Component {
                 <div className="beer">
                 <h1>{beer.name}</h1>
                 <p>{beer.description && beer.style ? beer.description : "Sorry, no Description Available"}</p>
-                {/* <p>{!beer.description ? beer.style.description : !beer.style.description ? "Sorry, no description available" : beer.style.description}</p> */}
+                
                 <img src={beer.labels ? beer.labels.medium : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuwMCypIe9DkjGbhGVVJtx9cFy99HdlAB_A6-jT4esR3DtJbaL"} alt="img" />
                
             </div>
