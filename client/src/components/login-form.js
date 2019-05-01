@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 
+
 class LoginForm extends Component {
     constructor() {
         super()
@@ -34,10 +35,11 @@ class LoginForm extends Component {
                 console.log('login response: ')
                 console.log(response)
                 if (response.status === 200) {
+                    console.log("finished")
                     // update App.js state
-                    localStorage.clear();
+                    // localStorage.clear();
                    // localStorage.setItem("_id", response.data.user._id)
-                   localStorage.setItem("loggedIn", true);
+                //    localStorage.setItem("loggedIn", true);
                     // this.props.updateUser({
                     //     loggedIn: true,
                     //     username: response.data.username
@@ -48,7 +50,7 @@ class LoginForm extends Component {
             }).then(() => {
                 console.log("you're in")
                 this.setState({
-                    redirectTo: '/'
+                    redirectTo: '/BeerFridge'
                 })
             })
             .catch(error => {

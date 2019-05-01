@@ -97,26 +97,7 @@ class BrewerySearch extends Component {
 
     export default BrewerySearch;
                 
-                {/* <div className="row" id="brews-container">
-                    <div className="container text-center my-3">
-                        <div className="row mx-auto my-auto">
-                            <div id="recipeCarousel" className="carousel slide w-100" data-ride="carousel">
-                                <div className="carousel-inner w-100" id="brews-carousel" role="listbox">
-                                </div>
-                                <a className="carousel-control-prev" href="#recipeCarousel" role="button"
-                                    data-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="sr-only">Previous</span>
-                                </a>
-                                <a className="carousel-control-next" href="#recipeCarousel" role="button"
-                                    data-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="sr-only">Next</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                
              
             
         
