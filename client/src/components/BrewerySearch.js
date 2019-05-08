@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../style.css';
 import API from "../utils/API";
+import './navbar.js'
 
 class BrewerySearch extends Component {
 
@@ -40,6 +41,7 @@ class BrewerySearch extends Component {
         return (
             
             <div>
+                
             <div>
             {this.state.beers.map(beer => (
                 <div className="beer">
@@ -71,26 +73,7 @@ class BrewerySearch extends Component {
                         </div>
                     </div>
                 </div>
-                 <div className="row"> 
-                    <div className="container text-center my-3">
-                        <div className="row mx-auto my-auto">
-                            <div className="carousel slide w-100" data-ride="carousel">
-                                <div className="carousel-inner w-100" role="listbox">
-                                <li className="carousel-control-prev" role="button"
-                                    data-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="sr-only">Previous</span>
-                                </li>
-                                <li className="carousel-control-next" role="button"
-                                    data-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="sr-only">Next</span>
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+                 
                 </div>
                 )
     }}

@@ -29,9 +29,9 @@ class Navbar extends Component {
         })
     }
 
-    // gotoGuestPage = () => {
-    //     window.location = "/guest"
-    // }
+    gotoGuestPage = () => {
+         window.location = "/guest"
+    }
 
     render() {
         const loggedIn = this.props.loggedIn;
@@ -45,7 +45,7 @@ class Navbar extends Component {
                     <div className="col-8" >
                         {loggedIn ? (
                             <section className="navbar-section">
-                                <Link to="/Guest" className="btn btn-link text-secondary" onClick={this.logout}>
+                                <Link to="/login" className="btn btn-link text-secondary" onClick={this.logout}>
                                 <span className="text-secondary">logout</span></Link>
 
                             </section>
