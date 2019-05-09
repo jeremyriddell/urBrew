@@ -136,7 +136,7 @@
     font-family: Comic Sans MS;
   }
   h1 {
-    background-color: black;
+    background-color: rgb(194, 117, 46);
     width: auto;
   }
   .jumbotron {
@@ -151,4 +151,12 @@
     width: 300px;
     margin-left: -200%;
   }
-  
+  .myfridge {
+    text-decoration-color: rgba(252, 174, 6, 0.986);
+  }
+  label {
+    background-color: rgb(233, 131, 14);
+  }
+  button {
+    background-color: rgb(235, 135, 14);
+  }

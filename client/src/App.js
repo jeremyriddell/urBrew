@@ -8,7 +8,7 @@ import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Guest from './components/guest'
-import { RecipeList, RecipeListItem} from './components/BeerFridge/BeerList/index'
+import TheFridge from './components/BeerFridge/BeerList/index'
 
 class App extends Component {
   constructor() {
@@ -86,9 +86,9 @@ class App extends Component {
         <Route
           path="/BeerFridge"
           render={() =>
-            <RecipeList>
-              <RecipeListItem/>
-            </RecipeList>
+            <TheFridge/>
+              
+            
               }
         />
       </div>

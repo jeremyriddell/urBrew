@@ -6,7 +6,11 @@ const fridgeSchema = new Schema({
   brewery: { type: String, required: true },
   size: { type: String, required: true },
   qty: { type: String, required: true },
+},
+{
+  collection: 'Fridge'
 });
+
 
 const Fridge = mongoose.model("Fridge", fridgeSchema);
 

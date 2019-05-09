@@ -29,6 +29,7 @@
 .text-secondary {
   font-size: 25px;
   width: 250px;
+  color: rgb(168, 97, 39)   !important;
 }
 .App-title {
   margin-left: 75%;

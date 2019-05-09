@@ -1,37 +1,42 @@
-import React from "react";
-import Thumbnail from "../Thumbnail";
-import { Container, Row, Col } from "../Grid";
+import React, { Component } from 'react';
+import '../../style.css'
 
-// Exporting both RecipeList and RecipeListItem from this file
-
-// RecipeList renders a bootstrap list item
-export function RecipeList({ children }) {
-    return <ul className="list-group">{children}</ul>;
+ class TheFridge extends Component {
+    render() {
+        return (
+            <div>
+            <div className="myfridge">
+                <h1>MY Beer Fridge</h1>
+                </div>
+            <div style={{marginTop: 10}}>
+                <h3>Add Beer</h3>
+                <form>
+                    <div className="form-group">
+                        <label>Beer Name:  </label>
+                        <input type="text" className="form-control"/>
+                    </div>
+                    <div className="form-group">
+                        <label>Brewery: </label>
+                        <input type="text" className="form-control"/>
+                    </div>
+                    <div className="form-group">
+                        <label>Size: </label>
+                        <input type="text" className="form-control"/>
+                    </div>
+                    <div className="form-group">
+                        <label>Quantity: </label>
+                        <input type="text" className="form-control"/>
+                    </div>
+                    <div className="form-group">
+                        <input type="submit" value="Add the Beer to My Fridge" className="btn btn-primary"/>
+                        <form action="/guest">
+                            <button type="submit">Back to Search</button>
+                        </form>
+                    </div>
+                </form>
+            </div>
+            </div>
+        )
+    }
 }
-
-// RecipeListItem renders a bootstrap list item containing data from the recipe api call
-export function RecipeListItem({
-    thumbnail = "https://placehold.it/300x300",
-    title,
-    ingredients,
-    href
-}) {
-    return (
-        <li className="list-group-item">
-            <Container>
-                <Row>
-                    <Col size="xs-4 sm-2">
-                        <Thumbnail src={thumbnail} />
-                    </Col>
-                    <Col size="xs-8 sm-9">
-                        <h3>{title}</h3>
-                        <p>Ingredients: {ingredients}</p>
-                        <a rel="noreferrer noopener" target="_blank" href={href}>
-                            Go to recipe!
-            </a>
-                    </Col>
-                </Row>
-            </Container>
-        </li>
-    );
-};
+export default TheFridge;

@@ -8,3 +8,10 @@ a.beerFridgebtn{
      text-indent: -10000px;
     
    }
+   h1 {
+     background-color: rgb(230, 143, 13);
+   }
+   .form-control {
+     margin-left: 20%;
+     width: 60%;
+   }
