@@ -61,15 +61,7 @@ class Navbar extends Component {
                                     <Link to="/signup" className="btn btn-link">
                                         <span className="text-secondary">sign up</span>
                                     </Link>
-                                    <button>
-                                    <Link to="/beerFridge" className="beerFridgebtn">
-                                    hello world
-                                        {/* <div className=" ">MY BEER FRIDGE</div> */}
-                                        {/* <div> <img alt="BeerFridgeButtonFinal" src="/public/images/BeerFridgeButtonFinal.jpg">
-                                        </img>
-                                        </div> */}
-                                    </Link>
-                                    </button>
+                                    
                                     
                                 </section>
                             )}
